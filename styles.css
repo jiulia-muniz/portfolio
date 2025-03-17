@@ -1,0 +1,59 @@
+/* importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=SUSE:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2F2F2F;
+    font-family: 'Poppins', sans-serif;
+
+}
+header{
+    background-color: black;
+    height: 75px;
+
+}
+main {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 100vh;            /* Faz o main ocupar toda a tela */
+}
+
+.logo{
+    color: #D9D9D9 ;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+      
+}
+
+.grupo-secao {
+    display: flex;
+    justify-content: space-around; /* Mantém os itens espaçados */
+    align-items: center;
+    gap: 60px;
+    height: 100vh;
+    margin: auto;
+}
+
+.section1{
+    background-color: aquamarine;
+}
+.titulo{
+    font-size: 30px;
+}
+.imagem-main{
+    flex: 1; /* Ocupa o espaço disponível */
+    text-align: center; /* Garante que a imagem não se desorganize */
+    margin-left: 50px; /* Adiciona espaço à esquerda da imagem */
+    
+}
+.imagem-main img{
+    width: 300px;
+    border-radius: 100%;
+    border: 2px solid;
+    height: 300px;
+    
+}
