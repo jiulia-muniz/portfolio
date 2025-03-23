@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body style="background-color: black; color: aliceblue; font-family: Arial, Helvetica, sans-serif;">
+    <script>
+        let num1 = Number(prompt("Digite um numero: "));
+        let num2 = Number(prompt("Digite outro numero: "));
+        const somar = (num1, num2) => {
+            let resultado = num1 + num2;
+            document.write(`o resultado é ${resultado}`);
+        };
+        const subtrair = (num1, num2) => {
+            let resultado = num1 - num2;
+            document.write(`o resultado é ${resultado}`);
+        };
+        const multiplicar = (num1, num2) => {
+            let resultado = num1 * num2;
+            document.write(`o resultado é ${resultado}`);
+        };
+        const dividir = (num1, num2) => {
+            if (num2 === 0) {
+                document.write("Não é possível dividir por zero!");
+            } else {
+                let resultado = num1 / num2;
+                document.write(`O resultado da divisão é: ${resultado}`);
+            }
+        };
+
+        let operacao = prompt("Escolha a operação desejada: \n1. Soma \n2. Subtração \n3. Multiplicação \n4. Divisão");
+
+        switch (operacao){
+            case '1':
+                somar(num1, num2);
+                break;
+            case '2':
+                subtrair(num1, num2);
+                break;
+            case '3':
+                multiplicar(num1, num2);
+                break;
+            case '4':
+                dividir(num1, num2);
+                break;
+            default:
+                document.write("Opção inválida! Por favor, escolha uma operação válida.");
+
+        }
+    </script>
+</body>
+</html>

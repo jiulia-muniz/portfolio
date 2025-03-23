@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body style="background-color: black; color: aliceblue; font-family: Arial, Helvetica, sans-serif;">
+    <script>
+        let num1 = Number(prompt("Digite o primeiro numero:"))
+        let num2 = Number(prompt("Digite o segundo numero:"))
+        let num3 = Number(prompt("Digite o terceiro numero:"))
+
+        let numMaior = 0;
+        let numMenor = 0;
+        let numDoMeio = 0;
+
+        const ordemCrescente = (num1, num2, num3) =>{
+            if(num1 > num2 && num1 > num3){
+                numMaior = num1;
+                if(num2 > num3){
+                    numDoMeio = num2;
+                    numMenor = num3;
+                } else{
+                    numDoMeio = num3;
+                    numMenor = num2;
+                }
+            }else if(num2 > num1 && num2 > num3){
+                numMaior = num2;
+                if(num1 > num3){
+                    numDoMeio = num1;
+                    numMenor = num3;
+                }else{
+                    numDoMeio = num3;
+                    numMenor = num1;
+                }
+            }else{
+                numMaior = num3;
+                if(num1 > num2){
+                    numDoMeio = num1;
+                    numMenor = num2;
+                }else{
+                    numDoMeio = num2;
+                    numMenor = num1;
+                }
+            }
+        }
+        
+        ordemCrescente(num1,num2,num3)
+        document.write(`Número maior: ${numMaior}<br>`)
+        document.write(`Número do meio: ${numDoMeio}<br>`)
+        document.write(`Número menor: ${numMenor}<br>`)
+    </script>
+</body>
+</html>
