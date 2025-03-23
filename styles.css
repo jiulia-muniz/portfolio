@@ -10,10 +10,7 @@
 body{
     background-color: #2F2F2F;
     font-family:  'Poppins', sans-serif;
-    
-    
-    
-
+    height: 90vh;
 }
 header{
     background-color: black;
@@ -38,7 +35,7 @@ main {
     display: flex;
     justify-content: space-around; /* Mantém os itens espaçados */
     align-items: center;
-    gap: 300px;
+    gap: 100px;
     height: 100vh;
     margin: auto;
     position: relative;
@@ -57,17 +54,22 @@ main {
     font-size: 20px;
     color: #D9D9D9;
 }
-
-button{
-    width: 140px;
-    border-radius: 6px;
+.botao-main{
+    margin-top: 20px; 
+    display: flex;
+    position: relative;
+    width: 200px;
     height: 50px;
-    margin-top: 10px;
-    background-color: black;
-    color: #D9D9D9;
-    font-size: 15px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-
+}
+.botao{
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
 }
 .imagem-main{
     flex: 1;
@@ -77,10 +79,47 @@ button{
 }
 .imagem-main img{
     width: 300px;
-    border-radius: 100%;
     border: 2px solid;
     height: 300px;
-    
+    border-radius: 50%; /* Melhor usar 50% para círculos */
+    object-fit: cover; /* Mantém a proporção sem distorcer */
 }
 
+footer{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    flex-direction: column;
+}
+.direitos{
+    color: #D9D9D9;
+    text-align: center;
+    margin-top: 20px; 
+    
+}
+.icones{
+    display: flex;
+    justify-content: center;
+    
 
+}
+.icone-1 img{
+    width: 60px;
+    height: 60px;
+    
+}
+.icone-1{
+    background-color: #eb2525;
+    border-radius: 50%;
+    width: 100px;
+}
+.icone-2{
+    background-color: #dd5959;
+    border-radius: 50%;
+}
+.icone-3{
+    background-color: #ac2929;
+    border-radius: 50%;
+}
