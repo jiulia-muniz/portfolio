@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <script>
+        let salario = Number(prompt("Digite o seu salario:"))
+
+        const impostoDeRenda = (salario) =>{
+            let imposto = 0;
+            if(salario <= 1903.98){
+                document.write("Você está isento de pagar imposto")
+            } else if(salario <= 2826.65){
+                imposto = (salario - 1903.98) * 0.075 - 14
+            }
+        }
+    </script>
+</body>
+</html>
