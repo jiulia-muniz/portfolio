@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body style="background-color: black; color: aliceblue; font-family: Arial, Helvetica, sans-serif;">
+    <script>
+        const calcularCedulas = (valor) => {
+  let valorOriginal = valor; // Preservar o valor original para exibição
+  let qtd200 = Math.floor(valor / 200);
+  valor -= qtd200 * 200;
+
+  let qtd100 = Math.floor(valor / 100);
+  valor -= qtd100 * 100;
+
+  let qtd50 = Math.floor(valor / 50);
+  valor -= qtd50 * 50;
+
+  let qtd20 = Math.floor(valor / 20);
+  valor -= qtd20 * 20;
+
+  let qtd10 = Math.floor(valor / 10);
+  valor -= qtd10 * 10;
+
+  let qtd5 = Math.floor(valor / 5);
+  valor -= qtd5 * 5;
+
+  let qtd1 = valor;
+
+  // Exibir o resultado no documento
+  document.write(`Cédulas necessárias para R$${valorOriginal}:<br>`);
+  if (qtd200 > 0) document.write(`R$200: ${qtd200}<br>`);
+  if (qtd100 > 0) document.write(`R$100: ${qtd100}<br>`);
+  if (qtd50 > 0) document.write(`R$50: ${qtd50}<br>`);
+  if (qtd20 > 0) document.write(`R$20: ${qtd20}<br>`);
+  if (qtd10 > 0) document.write(`R$10: ${qtd10}<br>`);
+  if (qtd5 > 0) document.write(`R$5: ${qtd5}<br>`);
+  if (qtd1 > 0) document.write(`R$1: ${qtd1}<br>`);
+};
+
+// Solicitar o valor ao usuário
+let valorCedulas = Number(prompt("Digite um valor: "));
+calcularCedulas(valorCedulas);
+
+    </script>
+</body>
+</html>

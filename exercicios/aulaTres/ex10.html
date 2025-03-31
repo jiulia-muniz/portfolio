@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 10</title>
 </head>
-<body>
+<body style="background-color: black; color: aliceblue; font-family: Arial, Helvetica, sans-serif;">
     <script>
-        let salario = Number(prompt("Digite o seu salario:"))
-
-        const impostoDeRenda = (salario) =>{
-            let imposto = 0;
-            if(salario <= 1903.98){
-                document.write("Você está isento de pagar imposto")
-            } else if(salario <= 2826.65){
-                imposto = (salario - 1903.98) * 0.075 - 14
-            }
+        const calcularImpostoDeRenda = (salario) => {
+        let imposto = 0;
+        if (salario <= 1903.98) {
+            imposto = 0;
+        } else if (salario <= 2826.65) {
+            imposto = salario * 0.075;
+        } else if (salario <= 3751.05) {
+            imposto = salario * 0.15;
+        } else if (salario <= 4664.68) {
+            imposto = salario * 0.225;
+        } else {
+            imposto = salario * 0.275;
         }
+        return imposto;
+        };
+
+        // Teste a função com um valor de salário
+        let salario = Number(prompt("Digite o seu salário: "));
+        let imposto = calcularImpostoDeRenda(salario);
+        document.write(`Imposto de Renda: R$${imposto}<br>`);
+
     </script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-/* importando fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
 
@@ -8,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(90deg, #2F2F2F, #D9D9D9);
+    background-color: #7c7c7c;
     font-family:  'Poppins', sans-serif;
     height: 90vh;
 }
@@ -17,86 +16,95 @@ header{
     height: 75px;
 
 }
+a{
+    text-decoration: none;
+    color:#2F2F2F;
+}
+
+h1{
+    color: #D9D9D9;
+    margin-bottom: 50px;
+}
 main {
-    background: linear-gradient(90deg, #2F2F2F, #D9D9D9);
+    background: linear-gradient(90deg, #6d6d6d, #0e0e0e);
     display: flex;
-    justify-content: center;  /* Centraliza horizontalmente */
-    align-items: center;      /* Centraliza verticalmente */
-    height: 90vh;            /* Faz o main ocupar toda a tela */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+    flex-direction: column;
+           
 }
 
 .logo{
     color: #D9D9D9 ;
     font-family: 'Poppins', sans-serif;
     padding: 10px;
-      
 }
-
-.grupo-secao {
+.title{
     display: flex;
-    justify-content: space-around; /* Mantém os itens espaçados */
+    justify-content: center;
     align-items: center;
-    gap: 150px;
-    height: 100vh;
-    margin: auto;
-    position: relative;
-    bottom: 100px;
-
+    font-size: 25px;
+    h1{
+        color: #fdfdfd;
+        font-weight: bolder;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
 }
-
-.titulo{
-    font-size: 30px;
-    font-weight: 100;
-    color: #D9D9D9;
-}
-.texto-main{
-    font-size: 20px;
-    color: #D9D9D9;
-}
-.botao-main{
-    margin-top: 20px; 
+.container-main{
     display: flex;
-    position: relative;
-    width: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    gap: 30px;
+}
+.direita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap: 20px;
+}
+.esquerda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+.exercicio{
+    background-color: #D9D9D9;
+    width: 300px;
     height: 50px;
-}
-.botao{
-    width: 150px;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 20px;
-    text-align: center;
-}
-.imagem-main{
-    flex: 1;
-    text-align: center; 
-    margin-left: 50px; 
-    animation: flutuar 3s ease-in-out infinite;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius:  10px 10px;
+    box-shadow: 10px 5px 45px;
     
 }
-.imagem-main img{
-    width: 400px;
-    border: 2px solid;
-    border: 6px outset black;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-    height: 400px;
-    border-radius: 50%; /* Melhor usar 50% para círculos */
-    object-fit: cover; /* Mantém a proporção sem distorcer */
+.exercicio:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 20px 20px rgb(0,0,0,0.6);
+    opacity: 1;
+    transition: transform 0.4s ease;
 }
-@keyframes flutuar {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background-color: #000000;
