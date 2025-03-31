@@ -24,7 +24,7 @@ h1{
     color: #D9D9D9;
     margin-bottom: 50px;
 }
-
+/* configurações para o main ter seu tamanho correto e a cor ficar condizente com o body */
 main {
     background: linear-gradient(90deg, #2F2F2F, #D9D9D9);
     display: flex;
@@ -53,11 +53,13 @@ main {
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     }
 }
+/* configurações do container que agrupa os elementos da pagina */
 .container-card{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* estilizações onde localiza o card que o usuario interage para acessar outra página */
 .card{
     display: flex;
     justify-content: center;
@@ -94,6 +96,7 @@ main {
     }
 }
 
+/* estilizações do rodapé para cada elemento ficar no lugar correto */
 
 footer{
     background-color: #000000;

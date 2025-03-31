@@ -7,24 +7,27 @@
 </head>
 <body style="background-color: black; color: aliceblue; font-family: Arial, Helvetica, sans-serif;">
     <script>
+        // exercicio para calcular o inss com base no salario
         const calcularINSS = (salario) => {
-  let aliquota;
-  if (salario <= 1045) {
-    aliquota = 0.075;
-  } else if (salario <= 2089.60) {
-    aliquota = 0.09;
-  } else if (salario <= 3134.40) {
-    aliquota = 0.12;
-  } else {
-    aliquota = 0.14;
-  }
-  return salario * aliquota;
-};
+        let contribuicao = 0;
+        if (salario <= 1518.00) {
+            contribuicao = salario * 0.075;
+        } else if (salario <= 2793.88) {
+            contribuicao = 1518.00 * 0.075 + (salario - 1518.00) * 0.09;
+        } else if (salario <= 4190.83) {
+            contribuicao = 1518.00 * 0.075 + (2793.88 - 1518.00) * 0.09 + (salario - 2793.88) * 0.12;
+        } else if (salario <= 8157.41) {
+            contribuicao = 1518.00 * 0.075 + (2793.88 - 1518.00) * 0.09 + (4190.83 - 2793.88) * 0.12 + (salario - 4190.83) * 0.14;
+        } else {
+            contribuicao = 1518.00 * 0.075 + (2793.88 - 1518.00) * 0.09 + (4190.83 - 2793.88) * 0.12 + (8157.41 - 4190.83) * 0.14;
+        }
+        return contribuicao;
+    };
 
-// Teste a função com um valor de salário
-let salarioInss = Number(prompt("Digite o seu salário: "));
-let inss = calcularINSS(salarioInss);
-document.write(`INSS: R$${inss}<br>`);
+    // Teste da função
+    let salarioInss = Number(prompt("Digite o seu salário: "));
+    let inss = calcularINSS(salarioInss);
+    document.write(`INSS: R$${inss.toFixed(2)}<br>`);
     </script>
 </body>
 </html>

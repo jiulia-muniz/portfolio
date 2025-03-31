@@ -7,8 +7,9 @@
 </head>
 <body style="background-color: black; color: aliceblue; font-family: Arial, Helvetica, sans-serif;">
     <script>
+        // exercicio para calcular o valor do financiamento do usuario
         const calcularParcelasFinanciamento = (valor, taxa, meses) => {
-  let parcela = valor * (taxa / (1 - Math.pow(1 + taxa, -meses)));
+  let parcela = valor * (taxa * Math.pow(1 + taxa, meses)) / (Math.pow(1 + taxa, meses) - 1);
   return parcela;
 };
 
@@ -16,8 +17,10 @@
 let valorFinanciamento = Number(prompt("Digite o valor do financiamento: "));
 let taxaJurosFinanciamento = Number(prompt("Digite a taxa de juros mensal (em decimal, ex: 0.01 para 1%): "));
 let mesesFinanciamento = Number(prompt("Digite o número de meses: "));
+
 let parcela = calcularParcelasFinanciamento(valorFinanciamento, taxaJurosFinanciamento, mesesFinanciamento);
-document.write(`Valor da parcela: R$${parcela}<br>`);
+
+document.write(`Valor da parcela: R$${parcela.toFixed(2)}<br>`);
     </script>
 </body>
 </html>

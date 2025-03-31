@@ -3,11 +3,13 @@
 
 
 *{
+    /* tirar todos os tipos de configurações que já vem na página */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    /* gradiente para manter um visual agradável, e uma fonte confortável para todo o site */
     background: linear-gradient(90deg, #2F2F2F, #D9D9D9);
     font-family:  'Poppins', sans-serif;
     height: 90vh;
@@ -20,9 +22,9 @@ header{
 main {
     background: linear-gradient(90deg, #2F2F2F, #D9D9D9);
     display: flex;
-    justify-content: center;  /* Centraliza horizontalmente */
-    align-items: center;      /* Centraliza verticalmente */
-    height: 90vh;            /* Faz o main ocupar toda a tela */
+    justify-content: center;  
+    align-items: center;      
+    height: 90vh;            
 }
 
 .logo{
@@ -34,7 +36,7 @@ main {
 
 .grupo-secao {
     display: flex;
-    justify-content: space-around; /* Mantém os itens espaçados */
+    justify-content: space-around; 
     align-items: center;
     gap: 150px;
     height: 100vh;
@@ -74,6 +76,7 @@ main {
     flex: 1;
     text-align: center; 
     margin-left: 50px; 
+    /* isso faz o container se mexer */
     animation: flutuar 3s ease-in-out infinite;
     
 }
@@ -83,9 +86,10 @@ main {
     border: 6px outset black;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     height: 400px;
-    border-radius: 50%; /* Melhor usar 50% para círculos */
-    object-fit: cover; /* Mantém a proporção sem distorcer */
+    border-radius: 50%; 
+    object-fit: cover; 
 }
+/* processo para o container subir e descer */
 @keyframes flutuar {
     0% {
       transform: translateY(0);
@@ -98,7 +102,7 @@ main {
     }
   }
 
-footer{
+  footer{
     background-color: #000000;
     display: flex;
     justify-content: center;

@@ -2,11 +2,13 @@
 
 
 *{
+    /* resetando todas as configurações que já vem na pagina */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+/* gradiente para manter um visual agradável, e uma fonte confortável para todo o site */
     background-color: #2F2F2F;
     font-family:  'Poppins', sans-serif;
     height: 90vh;
@@ -45,6 +47,7 @@ main {
 a{
     text-decoration: none;
 }
+/* manter as configurações no pai da div para que elas não precisem ter e só obedecem */
 .grouping-cards{
     display: flex;
     justify-content: center;
@@ -54,6 +57,7 @@ a{
     
        
 }
+/* existem varias configurações para cada um para caso algum de erro */
 /* PRIMEIRO */
 .card{
     width: 305px;

@@ -51,6 +51,7 @@ main {
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     }
 }
+/* estilizações para o container que agrupa todos os elementos dentro do main */
 .container-main{
     display: flex;
     justify-content: center;
@@ -58,6 +59,7 @@ main {
     padding: 7px;
     gap: 60px;
 }
+/* Pode parecer confuso porém essas são as estilizações da seção da esquerda, porque o css funciona assim ao contrário */
 .direita{
     display: flex;
     justify-content: center;
@@ -66,6 +68,8 @@ main {
     gap: 20px;
     padding: 10px;
 }
+
+/* estilizações das duas seções de forma harmoniosa e enquadrada */
 .esquerda{
     display: flex;
     justify-content: center;
@@ -74,6 +78,7 @@ main {
     gap: 20px;
     padding: 10px;
 }
+/* aqui estilizamos como cada um dos exercicios deve se parecer */
 .exercicio{
     background-color: #D9D9D9;
     width: 300px;
@@ -85,6 +90,7 @@ main {
     box-shadow: 10px 5px 45px;
     
 }
+/* quando o usuário passar o cursor por cima, a div aumenta de tamanho para dar uma enfase */
 .exercicio:hover{
     transform: scale(1.1);
     box-shadow: 10px 20px 20px rgb(0,0,0,0.6);
@@ -93,19 +99,7 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* estilizações do rodapé para cada elemento ficar no lugar correto */
 footer{
     background-color: #000000;
     display: flex;
