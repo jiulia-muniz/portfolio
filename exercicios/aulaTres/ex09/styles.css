@@ -1,12 +1,12 @@
 /* Reset de estilos padrão do navegador */
 * {
+    /* resetando configurações que ja vem na pagina */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-/* Corpo da página */
 body {
     background-color: #f4f4f4;
     display: flex;
@@ -15,7 +15,7 @@ body {
     height: 100vh;
 }
 
-/* Contêiner principal do formulário */
+/* container principal do formulário */
 .container {
     background: #fff;
     padding: 20px;
@@ -30,14 +30,14 @@ body {
     padding: 30px;
     border-radius: 10%;
 }
-/* Título */
+
 h1 {
     text-align: center;
     color: #333;
     margin-bottom: 15px;
 }
 
-/* Labels */
+/* os campos*/
 label {
     font-weight: bold;
     color:#e9e9e9;
@@ -45,7 +45,7 @@ label {
     margin-top: 10px;
 }
 
-/* Inputs */
+/* onde o usuario vai digitar */
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
@@ -57,11 +57,11 @@ input[type="email"] {
     font-size: 16px;
 }
 
-/* Grupo de opções de sexo */
+/* aqui o usuario pode interagir com opções de sexo */
 .radio-group {
     display: flex;
-    flex-direction: column;  /* Alinha as opções de rádio verticalmente */
-    gap: 10px;  /* Espaço entre as opções */
+    flex-direction: column;  
+    gap: 10px; 
     margin-top: 5px;
 }
 
@@ -69,7 +69,7 @@ input[type="email"] {
     font-weight: normal;
 }
 
-/* Botão de envio */
+/* esse botão é para o envio */
 button {
     width: 100%;
     background-color: #007bff;
@@ -83,14 +83,9 @@ button {
     transition: background 0.3s;
 }
 
-/* Efeito hover no botão */
+/* efeito hover no botão para dar mais destaque */
 button:hover {
     background-color: #0056b3;
 }
 
-/* Responsividade */
-@media (max-width: 500px) {
-    .container {
-        width: 90%;
-    }
-}
+

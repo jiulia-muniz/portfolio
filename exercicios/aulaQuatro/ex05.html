@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 5</title>
 </head>
+
 <body style="background-color: black; color: aliceblue; font-family: Arial, Helvetica, sans-serif;">
     <script>
-        let nomes = ["Rafa", "Jiu", "Lucas", "Duda", "Lari", "Ge", "Paula", "João", "Maria", "Carlos"]; // Vetor com 10 nomes
-let nomeBuscado = prompt("Informe o nome a ser buscado:");
+        // exercicio que verifica e mostra a posição se o usuario digitar o nome correto
+        let nomes = ["Rafa", "Jiu", "Lucas", "Duda", "Lari", "Ge", "Paula", "João", "Maria", "Carlos"]; 
+        let nomeBuscado = prompt("Informe o nome a ser buscado:");
 
-let indice = nomes.indexOf(nomeBuscado); // Busca o nome no vetor
+        let indice = nomes.indexOf(nomeBuscado); 
 
-if (indice !== -1) {
-    document.write(`O nome "${nomeBuscado}" foi encontrado na posição ${indice}.<br>`);
-} else {
-    document.write("Nome não encontrado.<br>");
-}
+        if (indice !== -1) {
+            document.write(`O nome "${nomeBuscado}" foi encontrado na posição ${indice}.<br>`);
+        } else {
+            document.write("Nome não encontrado.<br>");
+        }
 
     </script>
 </body>
+
 </html>

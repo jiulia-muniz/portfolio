@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 3</title>
 </head>
+
 <body style="background-color: black; color: aliceblue; font-family: Arial, Helvetica, sans-serif;">
     <script>
-        let idades = []; // Vetor para armazenar as idades
-let soma = 0;
+        // exercicio para ler a idade de 20 pessoas e mostrar as idades estão acima da media
+        let idades = []; 
+        let soma = 0;
 
-// Lê as idades
-for (let i = 0; i < 20; i++) {
-    let idade = parseInt(prompt(`Informe a idade da pessoa ${i + 1}:`));
-    idades.push(idade);
-    soma += idade; // Soma todas as idades
-}
 
-let media = soma / idades.length; // Calcula a média das idades
-document.write("Média das idades: " + media + "<br>");
+        for (let i = 0; i < 20; i++) {
+            let idade = parseInt(prompt(`Informe a idade da pessoa ${i + 1}:`));
+            idades.push(idade);
+            soma += idade;
+        }
 
-// Exibe as idades acima da média
-document.write("Idades acima da média:<br>");
-for (let i = 0; i < idades.length; i++) {
-    if (idades[i] > media) {
-        document.write(idades[i] + "<br>");
-    }
-}
+        let media = soma / idades.length;
+        document.write("Média das idades: " + media + "<br>");
+
+
+        document.write("Idades acima da média:<br>");
+        for (let i = 0; i < idades.length; i++) {
+            if (idades[i] > media) {
+                document.write(idades[i] + "<br>");
+            }
+        }
     </script>
 </body>
+
 </html>
